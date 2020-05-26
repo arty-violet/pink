@@ -37,7 +37,12 @@
         <h2 class="hidden">Фото-блог приложения «PINK»</h2>
         <p class="photo-blog__promo">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         <header class="photo-blog__header">
-          <div class="post post--best"><img class="post__image-mob post__image-mob--panorama" src="img/photo-blog/panorama-mobile.webp" alt="Панорама дня"><img class="post__image-tab post__image-tab--panorama" src="img/photo-blog/panorama-tablet.webp" width="0" height="0" alt="Панорама дня"><img class="post__image-dsk post__image-dsk--panorama" src="img/photo-blog/panorama-desktop.webp" width="0" height="0" alt="Панорама дня">
+          <div class="post post--best">
+            <picture>
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-dsk-panorama.webp 1x,img/webp/content/post/post__img-dsk-panorama@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-tab-panorama.webp 1x,img/webp/content/post/post__img-tab-panorama@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-dsk-panorama.jpg 1x,img/content/post/post__img-dsk-panorama@2x.jpg 2x"><img class="post__img post__img--panorama" src="img/content/software/post__img-tab-panorama.jpg" srcset="img/content/software/post__img-tab-panorama@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment post__comment--best">
               <cite class="post__author">Анна</cite><small class="post__time">(5 минут назад)</small>
               <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -46,42 +51,84 @@
           </div>
         </header>
         <ul class="photo-blog__list">
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-1-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-1-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-1-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-1.webp 1x,img/webp/content/post/post__img-dsk-1@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-1.webp 1x,img/webp/content/post/post__img-tab-1@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-1.webp 1x,img/webp/content/post/post__img-mob-1@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-1.jpg 1x,img/content/post/post__img-dsk-1@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-1.jpg 1x,img/content/post/post__img-tab-1@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-1.jpg" srcset="img/content/software/post__img-mob-1@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Левон</cite><small class="post__time">(5 часов назад)</small>
               <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <p class="post__likes">Нравится: 356<i class="icon icon-heart"></i></p>
             </blockquote>
           </li>
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-2-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-2-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-2-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-2.webp 1x,img/webp/content/post/post__img-dsk-2@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-2.webp 1x,img/webp/content/post/post__img-tab-2@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-2.webp 1x,img/webp/content/post/post__img-mob-2@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-2.jpg 1x,img/content/post/post__img-dsk-2@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-2.jpg 1x,img/content/post/post__img-tab-2@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-2.jpg" srcset="img/content/software/post__img-mob-2@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Антон</cite><small class="post__time">(12 часов назад)</small>
               <p class="post__text">Соседи будут рады!</p>
               <p class="post__likes">Нравится: 666<i class="icon icon-heart"></i></p>
             </blockquote>
           </li>
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-3-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-3-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-3-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-3.webp 1x,img/webp/content/post/post__img-dsk-3@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-3.webp 1x,img/webp/content/post/post__img-tab-3@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-3.webp 1x,img/webp/content/post/post__img-mob-3@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-3.jpg 1x,img/content/post/post__img-dsk-3@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-3.jpg 1x,img/content/post/post__img-tab-3@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-3.jpg" srcset="img/content/software/post__img-mob-3@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Борис</cite><small class="post__time">(20 часов назад)</small>
               <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="post__likes">Нравится: 215<i class="icon icon-heart"></i></p>
             </blockquote>
           </li>
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-4-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-4-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-4-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-4.webp 1x,img/webp/content/post/post__img-dsk-4@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-4.webp 1x,img/webp/content/post/post__img-tab-4@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-4.webp 1x,img/webp/content/post/post__img-mob-4@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-4.jpg 1x,img/content/post/post__img-dsk-4@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-4.jpg 1x,img/content/post/post__img-tab-4@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-4.jpg" srcset="img/content/software/post__img-mob-4@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Сергей</cite><small class="post__time">(25 часов назад)</small>
               <p class="post__text">Самая кубанская в мире!</p>
               <p class="post__likes">Нравится: 4<i class="icon icon-heart"></i></p>
             </blockquote>
           </li>
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-5-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-5-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-5-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-5.webp 1x,img/webp/content/post/post__img-dsk-5@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-5.webp 1x,img/webp/content/post/post__img-tab-5@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-5.webp 1x,img/webp/content/post/post__img-mob-5@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-5.jpg 1x,img/content/post/post__img-dsk-5@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-5.jpg 1x,img/content/post/post__img-tab-5@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-5.jpg" srcset="img/content/software/post__img-mob-5@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Максим</cite><small class="post__time">(40 часов назад)</small>
               <p class="post__text">Где снег-то?</p>
               <p class="post__likes">Нравится: 150<i class="icon icon-heart"></i></p>
             </blockquote>
           </li>
-          <li class="photo-blog__item post"><img class="post__image-mob" src="img/photo-blog/photo-6-mobile.webp" alt="Фото"><img class="post__image-tab" src="img/photo-blog/photo-6-tablet.webp" width="0" height="0" alt="Фото"><img class="post__image-dsk" src="img/photo-blog/photo-6-desktop.webp" width="0" height="0" alt="Фото">
+          <li class="photo-blog__item post">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/webp/content/post/post__img-dsk-6.webp 1x,img/webp/content/post/post__img-dsk-6@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 600px)" srcset="img/webp/content/post/post__img-tab-6.webp 1x,img/webp/content/post/post__img-tab-6@2x.webp 2x" type="image/webp">
+              <source srcset="img/webp/content/post/post__img-mob-6.webp 1x,img/webp/content/post/post__img-mob-6@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/post/post__img-dsk-6.jpg 1x,img/content/post/post__img-dsk-6@2x.jpg 2x">
+              <source media="(min-width: 600px)" srcset="img/content/post/post__img-tab-6.jpg 1x,img/content/post/post__img-tab-6@2x.jpg 2x"><img class="post__img" src="img/content/software/post__img-mob-6.jpg" srcset="img/content/software/post__img-mob-6@2x.jpg 2x" alt="Фото">
+            </picture>
             <blockquote class="post__comment">
               <cite class="post__author">Надежда</cite><small class="post__time">(45 часов назад)</small>
               <p class="post__text">Всем GM и взаимные лайки!</p>
@@ -93,7 +140,12 @@
       <section class="photo-filter">
         <h2 class="hidden">Фото-фильтр приложения «PINK»</h2>
         <p class="photo-filter__promo">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-filter__filter"><img class="photo-filter__photo-mob" src="img/photo-blog/photo-7-mobile.webp" alt="фото в фильтре"><img class="photo-filter__photo-dsk" src="img/photo-blog/photo-7-desktop.webp" width="0" height="0" alt="фото в фильтре">
+        <div class="photo-filter__filter">
+          <div class="photo-filter__image">
+            <picture>
+              <source srcset="img/webp/content/photo-filter/photo-filter__img.webp 1x,img/webp/content/photo-filter/photo-filter__img@2x.webp 2x" type="image/webp"><img src="img/content/photo-filter/photo-filter__img.jpg" srcset="img/content/photo-filter/photo-filter__img@2x.jpg 2x" alt="фото в фильтре">
+            </picture>
+          </div>
           <div class="photo-filter__form">
             <ul class="photo-filter__list">
               <li class="photo-filter__item">

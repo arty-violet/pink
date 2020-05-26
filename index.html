@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__nav nav-menu nav-menu--inner">
         <input class="nav-menu__checkbox hidden" id="nav-menu__toggle" type="checkbox" tabindex="2">
-        <div class="nav-menu__headline"><a class="logo" href="#" tabindex="1"><i class="icon icon-logo-mob"></i><i class="icon icon-logo-tab"></i><i class="icon icon-logo-dsk"></i><i class="icon icon-logo-mob--red"></i><i class="icon icon-logo-tab--red"></i></a>
+        <div class="nav-menu__headline"><a class="logo" href="#header" tabindex="1"><i class="icon icon-logo-mob"></i><i class="icon icon-logo-tab"></i><i class="icon icon-logo-dsk"></i><i class="icon icon-logo-mob--red"></i><i class="icon icon-logo-tab--red"></i></a>
           <label class="nav-menu__toggle" for="nav-menu__toggle"><span class="hidden">Открыть/закрыть меню</span><span class="nav-menu__toggle-line"></span><span class="nav-menu__toggle-line"></span><span class="nav-menu__toggle-line"></span></label>
         </div>
         <ul class="nav-menu__list">
-          <li><a class="nav-menu__link nav-menu__link--active" href="#">Главная</a></li>
+          <li><a class="nav-menu__link nav-menu__link--active" href="#header">Главная</a></li>
           <li><a class="nav-menu__link" href="photo.html">Фотографии</a></li>
           <li><a class="nav-menu__link" href="form.html">Конкурс</a></li>
           <li><a class="nav-menu__link" href="#">HTML Academy</a></li>
@@ -35,10 +35,13 @@
       <h1 class="hidden">Приложение «PINK»</h1>
       <section class="software">
         <h2 class="hidden">Скачать приложение</h2>
-        <div class="software__image-container">
+        <div class="software__image">
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)" srcset="img/header/back-index-desktop.webp">
-            <source type="image/webp" media="(min-width: 600px)" srcset="img/header/back-index-tablet.webp"><img class="software__image" src="img/header/back-index-mobile.jpg" srcset="img/header/back-index-mobile.jpg" alt="">
+            <source media="(min-width: 1024px)" srcset="img/webp/content/software/software__bg-dsk.webp 1x,img/webp/content/software/software__bg-dsk@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 600px)" srcset="img/webp/content/software/software__bg-tab.webp 1x,img/webp/content/software/software__bg-tab@2x.webp 2x" type="image/webp">
+            <source srcset="img/webp/content/software/software__bg-mob.webp 1x,img/webp/content/software/software__bg-mob@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/content/software/software__bg-dsk.jpg 1x,img/content/software/software__bg-dsk@2x.jpg 2x">
+            <source media="(min-width: 600px)" srcset="img/content/software/software__bg-tab.jpg 1x,img/content/software/software__bg-tab@2x.jpg 2x"><img class="software__img" src="img/content/software/software__bg-mob.jpg" srcset="img/content/software/software__bg-mob@2x.jpg 2x" alt="software background">
           </picture>
         </div>
         <div class="software__info">
@@ -156,11 +159,14 @@
       </div>
       <div class="footer__map map">
         <picture>
-          <source media="(min-width: 1024px)" srcset="img/footer/map-desktop.jpg">
-          <source media="(min-width: 600px)" srcset="img/footer/map-tablet.webp"><img class="map__image" src="img/footer/map-mobile.webp" alt="Наше расположение на карте: ул. Большая Конюшенная, 19/8">
+          <source media="(min-width: 1024px)" srcset="img/webp/content/map/map__img-dsk.webp 1x,img/webp/content/map/map__img-dsk@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 600px)" srcset="img/webp/content/map/map__img-tab.webp 1x,img/webp/content/map/map__img-tab@2x.webp 2x" type="image/webp">
+          <source srcset="img/webp/content/map/map__img-mob.webp 1x,img/webp/content/map/map__img-mob@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1024px)" srcset="img/content/map/map__img-dsk.png 1x,img/content/map/map__img-dsk@2x.png 2x">
+          <source media="(min-width: 600px)" srcset="img/content/map/map__img-tab.png 1x,img/content/map/map__img-tab@2x.png 2x"><img class="map__image" src="img/content/map/map__img-mob.png" srcset="img/content/map/map__img-mob@2x.png 2x" alt="Наше расположение на карте: ул. Большая Конюшенная, 19/8">
         </picture>
       </div>
-      <div class="footer__bottom"><a class="footer__logo logo logo--inner logo--footer" href="#"><i class="icon icon-logo-tab-blue"></i><i class="icon icon-logo-dsk-blue"></i><i class="icon icon-logo-tab--red"></i></a>
+      <div class="footer__bottom"><a class="footer__logo logo logo--inner logo--footer" href="#header"><i class="icon icon-logo-tab-blue"></i><i class="icon icon-logo-dsk-blue"></i><i class="icon icon-logo-tab--red"></i></a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><i class="icon icon-social-twitter"></i><span class="hidden">Twitter</span></a></li>
